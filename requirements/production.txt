@@ -1,0 +1,10 @@
+Django
+dj-database-url
+psycopg2
+gunicorn
+honcho
+requests
+celery
+flower
+redis
+django-pipeline
