@@ -8,3 +8,6 @@ celery
 flower
 redis
 django-pipeline
+djangorestframework
+markdown
+django-filter
