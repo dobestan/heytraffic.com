@@ -27,39 +27,38 @@ STATICFILES_FINDERS = (
 
 STATICFILES_STORAGE = 'pipeline.storage.PipelineCachedStorage'
 
-PIPELINE_CSS_COMPRESSOR = 'pipeline.compressors.NoopCompressor'
-PIPELINE_JS_COMPRESSOR = 'pipeline.compressors.NoopCompressor'
 
-
-PIPELINE_JS = {
-    'vendor': {
-        'source_filenames': [
-            'js/jquery.min.js',
-            'js/bootstrap.min.js',
-        ],
-        'output_filename': 'js/vendor.min.js',
-    },
-
-    'main': {
-        'source_filenames': {
-            'js/application.js',
+PIPELINE = {
+    'JAVASCRIPT': {
+        'vendor': {
+            'source_filenames': [
+                'js/jquery.min.js',
+                'js/bootstrap.min.js',
+            ],
+            'output_filename': 'js/vendor.min.js',
         },
-        'output_filename': 'js/heytraffic.min.js',
-    },
-}
 
-PIPELINE_CSS = {
-    'vendor': {
-        'source_filenames': [
-            'css/bootstrap.min.css',
-        ],
-        'output_filename': 'css/vendor.min.css',
-    },
-
-    'main': {
-        'source_filenames': {
-            'css/application.css',
+        'main': {
+            'source_filenames': {
+                'js/application.js',
+            },
+            'output_filename': 'js/heytraffic.min.js',
         },
-        'output_filename': 'css/heytraffic.min.css',
+    },
+
+    'STYLESHEETS': {
+        'vendor': {
+            'source_filenames': [
+                'css/bootstrap.min.css',
+            ],
+            'output_filename': 'css/vendor.min.css',
+        },
+
+        'main': {
+            'source_filenames': {
+                'css/application.css',
+            },
+            'output_filename': 'css/heytraffic.min.css',
+        },
     },
 }
