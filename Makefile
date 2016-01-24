@@ -10,7 +10,7 @@ clean:
 
 # target: migrate - Migrate all django applications considering app dependencies
 migrate:
-	python heytraffic/manage.py makemigrations
+	python heytraffic/manage.py makemigrations heytraffic
 	python heytraffic/manage.py migrate
 
 
