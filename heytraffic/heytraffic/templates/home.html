@@ -2,4 +2,29 @@
 
 
 {% block content %}
+  <section id="feature">
+    <div class="container">
+      <ul class="">
+        {% for feature in features %}
+          <li class="">
+            {{ feature.title }}
+            {{ feature.content }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="container">
+      <ul class="">
+        {% for faq in faqs %}
+          <li class="">
+            {{ faq.question }}
+            {{ faq.answer }}
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </section>
 {% endblock %}
