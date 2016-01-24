@@ -1,3 +1,6 @@
+import datetime
+
+from django.contrib.sites.shortcuts import get_current_site
 from django.views.generic import TemplateView
 
 
@@ -6,6 +9,16 @@ class HomeView(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super(HomeView, self).get_context_data(**kwargs)
+
+        # Site & SiteProfile
+        current_site = get_current_site(self.request)
+        context['site'] = current_site
+        context['site_profile'] = current_site.site_profile
+
+        # Current Date
+        today = datetime.date.today()
+        last_monday = today - datetime.timedelta(days=today.weekday())
+        context['last_monday'] = last_monday
 
         # Feature Section
         context['features'] = [
