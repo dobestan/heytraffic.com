@@ -50,6 +50,7 @@ PIPELINE = {
         'vendor': {
             'source_filenames': [
                 'css/bootstrap.min.css',
+                'css/fontawesome.min.css',
             ],
             'output_filename': 'css/vendor.min.css',
         },

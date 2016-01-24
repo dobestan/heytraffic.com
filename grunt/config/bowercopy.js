@@ -10,9 +10,11 @@ module.exports = {
 
       'js/bootstrap.min.js': 'bootstrap/dist/js/bootstrap.min.js',
       'css/bootstrap.min.css': 'bootstrap/dist/css/bootstrap.min.css',
+      'css/fontawesome.min.css': 'font-awesome/css/font-awesome.min.css',
 
       'fonts': [
         'bootstrap/fonts/',
+        'font-awesome/fonts/',
       ]
     }
   }

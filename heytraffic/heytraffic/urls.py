@@ -7,6 +7,8 @@ from heytraffic.views import *
 from heytraffic.api import *
 
 
+admin.site.site_header = '헤이트래픽 관리자'
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
 
