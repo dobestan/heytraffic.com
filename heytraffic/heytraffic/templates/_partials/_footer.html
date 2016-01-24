@@ -1,4 +1,31 @@
 <footer id="footer">
   <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        로고
+
+        <ul>
+          <li>헤이트래픽</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>제공 서비스</h5>
+        <ul>
+          <li><a href="{% url "service:traffic" %}"><i class="fa fa-cloud-upload"></i> 트래픽</a></li>
+          <li><a href="{% url "service:facebook" %}"><i class="fa fa-facebook"></i> 페이스북</a></li>
+          <li><a href="{% url "service:twitter" %}"><i class="fa fa-twitter"></i> 트위터</a></li>
+          <li><a href="{% url "service:instagram" %}"><i class="fa fa-instagram"></i> 인스타그램</a></li>
+          <li><a href="{% url "service:youtube" %}"><i class="fa fa-youtube"></i> 유튜브</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <h5>관련 링크</h5>
+        <ul>
+          <li><a href="">헤이트래픽 페이스북</a></li>
+          <li><a href="">헤이트래픽 트위터</a></li>
+          <li><a href="">헤이트래픽 인스타그램</a></li>
+        </ul>
+      </div>
+    </div>
   </div>
 </footer>
